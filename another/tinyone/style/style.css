@@ -1,0 +1,266 @@
+@font-face{
+    font-family:"PTSansRegular";
+    src:url(../fonts/PT_Sans-Web-Regular.ttf)
+}
+@font-face{
+    font-family:"PTSansBold";
+    src:url(../fonts/PT_Sans-Web-Bold.ttf)
+}
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    font-family:"PTSansBold";
+}
+a:visited, a:active{
+    color:black;
+}
+header{
+    width:100%;
+    height:800px;
+    background-color: #fcdb00;
+    padding: 50px 0;
+}
+.navigation{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.nav-links{
+    color:black;
+    font-size:24px;
+    font-family: "PTSansBold";
+    margin-left:50px;
+}
+.logo{
+    margin-left:20px;
+}
+button{
+    width:50px;
+    height:50px;
+    border:1px solid black;
+}
+.each{
+    width:100%;
+    height:650px;
+    background-color:inherit;
+    padding:50px 10%;
+    margin:auto;
+}
+.slide-text{
+    width:100%;
+    height:600px;
+    background:inherit;
+}
+.carousel-indicators{
+    display:none;
+}
+.each-header{
+    margin-top:80px;
+    position:absolute;
+}
+.each-subtitle{
+    margin-top:150px;
+    position:absolute;
+    font-size:15px;
+}
+.each-description{
+    max-width:600px;
+    margin-top:200px;
+    position:absolute;
+    font-family:"PTSansRegular";
+    font-size:14px;
+}
+.slide-text-img{
+    margin-top:350px;
+    position:absolute;
+}
+.slide-text-img img{
+    margin-right:20px;
+}
+main{
+    width:100%;
+    min-height:750px;
+}
+.information{
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.info-title{
+    width:100%;
+    text-align:center;
+}
+.info{
+    width:80%;
+    text-align:center;
+    font-family:"PTSansRegular";
+    font-size:15px;
+    margin-left:10%;
+}
+.info-detals{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.info-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top:50px;
+    margin-bottom:100px;
+}
+.info-item img{
+    margin-right:20px;
+}
+.info-item h3, .info-item p{
+    font-family:"PTSansRegular";
+}
+.info-item p{
+    color:grey;
+}
+footer{
+    width:100%;
+    min-height:800px;
+    background-color:#010101;
+}
+.footer-title{
+    width:100%;
+    text-align:center;
+    color:#fcdb00;
+}
+.footer-subtitle{
+    width:70%;
+    color:#676767;
+    font-family:"PTSansRegular";
+    text-align:center;
+    margin:20px 15%;
+}
+.form{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.form-email{
+    width:100%;
+    height:10px;
+    padding:25px;
+    background-color:white;
+    border-radius:3px;
+    border:0;
+    font-family:"PTSansRegular";
+    margin-bottom:20px;
+}
+.form-btn{
+    width:130px;
+    background-color:#fcdb00;
+    padding:15px 40px;
+    border:0;
+    border-radius:3px;
+    color:black;
+}
+.footer-aside{
+    width:100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.footer-aside a{
+    margin:50px 10px;
+}
+.footer-navs{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.footer-nav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.footer-nav{
+    display:flex;
+    flex-direction:column;
+}
+.footer-nav a{
+    max-width:180px;
+    color:white;
+    font-family:"PTSansRegular";
+}
+@media(min-width:816px){
+    .logo{
+        margin-left:0;
+    }
+    .slide-text{
+        background-image: url(../img/little-ipad.png);
+    }
+    .each-header{
+        margin-top:80px;
+    }
+    .each-subtitle{
+        max-width:300px;
+        margin-top:120px;
+    }
+    .each-description{
+        max-width:300px;
+        margin-top:170px;
+    }
+    .slide-text-img{
+        margin-top:320px;
+    }
+    .carousel-indicators{
+        display:block;
+    }
+    .info-item{
+        flex-direction: row;
+    }
+    .form-btn{
+        margin-left:20px;
+    }
+    .form-email{
+        width:500px;
+    }
+}
+@media(min-width:992px){
+    .slide-text{
+        background-image: url(../img/ipad.png);
+    }
+    .each-header{
+        margin-top:120px;
+    }
+    .each-subtitle{
+        margin-top:160px;
+    }
+    .each-description{
+        max-width:450px;
+        margin-top:220px;
+    }
+    .slide-text-img{
+        margin-top:330px;
+    }
+}
+@media(min-width:1200px){
+    .slide-text{
+        background-image: url(../img/big-ipad.png);
+    }
+    .each-header{
+        margin-top:150px;
+    }
+    .each-subtitle{
+        margin-top:190px;
+    }
+    .each-description{
+        max-width:450px;
+        margin-top:240px;
+    }
+    .slide-text-img{
+        margin-top:350px;
+    }
+}

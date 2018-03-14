@@ -1,0 +1,322 @@
+@font-face{
+    font-family:"Museo";
+    src:url(../fonts/MuseoSansCyrl.otf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    font-family:"Museo";
+}
+
+a:visited, a:active, a:hover{
+    color:black;
+    text-decoration: none;
+    cursor: pointer
+}
+
+header{
+    width: 100%;
+    height: 735px;
+    background-image: url(../img/jumbotron.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    font-size: 64px;
+}
+
+h2{
+    text-align: center;
+    font-size: 42px;
+    margin: 40px 0;
+}
+
+h3{
+    text-align: center;
+    font-size: 32px;
+}
+
+.order{
+    font-size: 24px;
+    padding: 1% 3%;
+    background-color: #d85f00;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.about-me{
+    width: 90%;
+    padding: 0 5%;
+    height: auto;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-text{
+    width: 80%;
+    height: auto;
+    border-left: 1px solid grey;
+    position: relative;
+}
+
+.about-title{
+    color: #d85f00;
+    text-align: left;
+    border-left: 5px solid #d85f00;
+    padding-left: 25px;
+    margin: 25px 0;
+}
+
+li{
+    margin: 5px;
+}
+
+.about-photo{
+    max-width: 402px;
+    height: 100%;
+    max-height: 402px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.portfolio-title{
+    width: 300px;
+    height: auto;
+    padding: 100px;
+    padding-left: 0;
+    border-left: 1px solid grey;
+    box-sizing: content-box;
+    margin: auto;
+}
+
+.portfolio-title-h{
+    width: 300px;
+    height: auto;
+    padding-left: 25px;
+    border-left: 5px solid #d85f00;
+}
+
+.carousel{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.slides{
+    width: 2650px;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+#left-arrow{
+    width:32px;
+    background-color: #d85f00;
+    font-size: 32px;
+    color: white;
+    visibility:visible;
+}
+
+#right-arrow{
+    width:32px;
+    background-color: #d85f00;
+    font-size: 32px;
+    color: white;
+    visibility:hidden;
+}
+
+.slides a{
+    width: 520px;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.alice{
+    background-image: url(../img/resume.png);
+}
+
+.chat{
+    background-image: url(../img/chatbot.png);
+}
+
+.corr{
+    background-image: url(../img/corr.png);
+}
+
+.tinyone{
+    background-image: url(../img/tinyone.png);
+}
+
+.udg{
+    background-image: url(../img/udg.png);
+}
+
+footer{
+    width: 100%;
+    height: 590px;
+    background-image: url(../img/footer.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.opacity{
+    width: 100%;
+    height: inherit;
+    background-color: rgba(55,55,55,0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-title{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-top: 80px;
+}
+
+.footer-subtitle{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.contacts{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.contacts>*{
+    color:#fff;
+    margin: 10px;
+    
+}
+
+#form{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    margin: 1% 33%;
+    background-color: #fff;
+    display: none;
+    z-index: 10;
+}
+
+form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+}
+
+textarea{
+    width: 348px;
+    height: 120px;
+    border: 0;
+    border-bottom: 2px solid dimgray;
+    resize: none;
+}
+
+input{
+    height: 25px;
+    border: 0;
+    border-bottom: 2px solid dimgray;
+    margin: 10px 0;
+}
+
+input[type="submit"]{
+    width: 150px;
+    padding: 10px;
+    box-sizing: content-box;
+    border: 0;
+    background-color: #d85f00;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#close{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#close div{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+
+#left{
+    transform: rotate(-45deg);
+    margin-top: 15px;
+}
+
+#right{
+    transform: rotate(45deg);
+    margin-top: -2px;
+}
+
+@media(min-width:786px){
+    .about-me{
+        width: 80%;
+        padding: 0 10%;
+        flex-direction: row;
+    }
+    
+    .about-text{
+        width: 40%;
+        left: -800px;
+    }
+    .contacts{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .carousel{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media(min-width:992px){
+    .about-me{
+        width: 70%;
+        padding: 0 15%
+    }
+}
+@media(min-width:1200px){
+    
+}

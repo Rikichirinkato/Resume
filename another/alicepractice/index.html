@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Rikichirinkato</title>
+</head>
+<body>
+    <header>
+        <div id="home"></div>
+        <div class="opacity">
+            <nav>
+                <div class="nav">
+                    <label class="menu-btn" for="menu">
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                        <span class="burger"></span>
+                    </label>
+                    <input type="checkbox" id="menu"/>
+                    <ul class="navigation">
+                        <li><a href="#home" class="smooth">Home</a></li>
+                        <li><a href="#about" class="smooth">About Me</a></li>
+                        <li><a href="#education" class="smooth">Education</a></li>
+                        <li><a href="#skills" class="smooth">Skills and Tools</a></li>
+                        <li><a href="#contacts" class="smooth">Contacts</a></li>
+                        <li><a href="#write" class="smooth">Write Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="greeting">
+                <h1>Roman Krasko</h1>
+                <p>Front-end developer</p>
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="information" id="about">
+            <img src="img/face.jpg" alt="My photo">
+            <p>Hello, my name is Roman, and I am front-end developer from Lviv, Ukraine.<br><br>Love music, coffee and JavaScript.  </p>
+        </div>
+        <article class="education" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Lviv Ivan Franko National University, Master of Geography, 2012 – 2018 </li>
+                <li>Logos IT Academy, JavaScript, 2016</li>
+                <li>Lviv IT School, Web-UI development, 2017</li>
+                <li>SoftServe IT Academy, HTML5/ CSS3/ JavaScript Fundamentals, 2018</li>
+            </ul>
+        </article>
+        <article class="skillsNtools" id="skills">
+            <h2>My skills and tools </h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="inside">
+                        <div class="html"><div class="skill-item">HTML</div></div>
+                        <div class="css"><div class="skill-item">CSS</div></div>
+                        <div class="js"><div class="skill-item">JavaScript</div></div>
+                        <div class="es"><div class="skill-item">EcmaScript6</div></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inside">
+                        <div class="bt"><div class="skill-item">Bootstrap</div></div>
+                        <div class="jq"><div class="skill-item">Jquery</div></div>
+                        <div class="ajax"><div class="skill-item">Ajax</div></div>
+                        <div class="ph"><div class="skill-item">Photoshop</div></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="inside">
+                        <div class="react"><div class="skill-item">React</div></div>
+                        <div class="redux"><div class="skill-item">Redux</div></div>
+                        <div class="react"><div class="skill-item">React Native</div></div>
+                        <div class="git"><div class="skill-item">Git</div></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </article>
+        <article class="contacts" id="contacts">
+            <h2>My Contact</h2>
+            <ul>
+                <li>
+                    <a href="mailto:roman28krasko@gmail.com" class="contact-item">
+                        <img src="img/mail.png" alt="mail logo">
+                        <span>My e-mail: roman28krasko@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+380936318557" class="contact-item">
+                        <img src="img/phone.png" alt="phone logo">
+                        <span>My tel. number: +380936318557</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/Rikichirinkato" class="contact-item">
+                        <img src="img/github-logo.png" alt="github logo">
+                        <span>My GitHub profile: Rikichikinkato</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/roman.krasko" class="contact-item">
+                        <img src="img/fb-art.png" alt="phone logo">
+                        <span>My Facebook profile: Roman Krasko</span>
+                    </a>
+                </li>
+            </ul>
+        </article>
+        <article class="write" id="write">
+            <h2>Write Me</h2>
+            <div id="tnx" class="tnx">Thank you for message!</div>
+            <form method="POST" action="https://tranquil-sierra-86540.herokuapp.com/roman28krasko@gmail.com">
+                <input type="text" name="name" placeholder="Enter Your Name" id="userName">
+                <input type="text" name="email" placeholder="Enter Your E-Mail" id="email">
+                <textarea name="text" placeholder="Enter Your Message" id="textarea"></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>2018 by Rikichikinkato</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+</html>
