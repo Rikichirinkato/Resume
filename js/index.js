@@ -43,7 +43,6 @@ $('form').on('submit', e => {
 let x = 0;
 $('#left-arrow').on('click', () => {
     x = x - 520;
-    console.log(x);
     $('.slides').css({ marginLeft: x + 'px' })
     if(x < -260){
         $('#right-arrow').css({ visibility: "visible" });
@@ -60,7 +59,6 @@ $('#left-arrow').on('click', () => {
 })
 $('#right-arrow').on('click', () => {
     x = x + 520;
-    console.log(x);
     $('.slides').css({ marginLeft: x + 'px' });
     if(x < -260) {
         $('#right-arrow').css({ visibility: "visible" });
